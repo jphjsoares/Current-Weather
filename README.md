@@ -1,9 +1,5 @@
 # Current-Weather
 
-#WARNING: PROJECT NOT DONE YET
-
-#Only the HTML and CSS is ready
-
 #This web app will be able to:
   #Get your current location
   #Check the weather
