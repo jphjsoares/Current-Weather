@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>What's the weather?!</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./_css/style.css">
+        <link rel="stylesheet" href="./_css/weather-icons.min.css">
+    </head>
+    <body>
+        <div class="text-center container-fluid" id="title">
+            <h1 style="font-size: 55px;">What's the weather?!</h1>
+        </div>
+        <div id="main-app" class="text-center container">
+            <div id="location">
+                <p id="city-country"></p>
+            </div>
+            <div id="description">
+                <p id="description"></p>
+            </div>
+            <div id="degrees">
+                <p id="temp"></p>
+            </div>
+            <div id="iconsDiv">
+                <i id="icon"></i>
+            </div>
+            <div id="button">
+                <button id="toggle" class="btn btn-default" type="button" name="button">°C or °F</button>
+            </div>
+        </div>
+        <div class="text-center container-fluid" id="footer">
+            <p>By:</p>
+            <p>José Soares - 2017</p>
+        </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"   integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="./_scripts/geolocation.js"></script>
+    </body>
+</html>

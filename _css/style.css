@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    background-color: #727272;
+}
+
+div {
+    margin-top: 25px;
+    color: white;
+}
+
+
+div#main-app {
+    background-color: #484848;
+    padding-bottom: 25px;
+    width: 50%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 1px #979797;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+}
+
+div#title {
+    font-family: 'Russo One', cursive;
+}
