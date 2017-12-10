@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+ @import url('https://fonts.googleapis.com/css?family=Changa');
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
     background-color: #727272;
@@ -22,5 +22,9 @@ div#main-app {
 }
 
 div#title {
-    font-family: 'Russo One', cursive;
+    font-family: 'Changa', cursive;
+}
+
+#footer {
+    font-weight: 100;
 }
