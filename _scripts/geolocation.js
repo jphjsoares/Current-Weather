@@ -17,12 +17,7 @@
                     var lat = "lat=" + crd.latitude;
                     var lon = "lon=" + crd.longitude;
                     getWeather(lat, lon);
-                    /*
-                    console.log('Your current position is:');
-                    console.log(`Latitude : ${crd.latitude}`);
-                    console.log(`Longitude: ${crd.longitude}`);
-                    console.log(`More or less ${crd.accuracy} meters.`);
-                    */
+                    
                 };
                 
                 //If it failed to get current position
@@ -43,8 +38,9 @@
                 var urlString = api + lat + "&" + lon;
 
                 $.getJSON(urlString, function(data){
+                    console.log(data);
+                    var degrees = parseFloat(data.main.temp);
 
-                    var degrees = data.main.temp;
 
                     var unit = "c";
 
@@ -72,7 +68,7 @@
                         //Convert to fahrenheit
                         if(temperature.unit == "c"){
 
-                            temperature.degrees+=273.15;
+                            temperature.degrees = (temperature.degrees*1.8) + 32;
 
                             $("#temp").html(temperature.degrees + " °F");
 
@@ -82,7 +78,7 @@
                         //Convert to Celsius
                         else if (temperature.unit == "f") {
 
-                            temperature.degrees-=273.15;
+                            temperature.degrees = (temperature.degrees - 32)/1.8;
 
                             $("#temp").html(temperature.degrees + " °C");
 
@@ -103,8 +99,3 @@
             }
 
     }); //end of document function
-
-/* 
-    TODO:
-        Increase geolocation accuracy
-*/
